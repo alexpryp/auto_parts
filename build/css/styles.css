@@ -1,0 +1,160 @@
+:root {
+  font-size: 16px; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  height: 175px; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: #696969; }
+
+.nav__content,
+.nav__group1,
+.nav__login-button,
+.header__content-wrap,
+.header__content,
+.header__logo,
+.header__phone-basket,
+.header__phones,
+.header__callme-button,
+.header__compare-basket {
+  display: flex; }
+
+.nav__login-button,
+.header__callme-button {
+  justify-content: center;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0; }
+
+.nav__content-wrap {
+  max-width: 1360px;
+  width: 100%; }
+
+.nav__content {
+  width: 100%;
+  justify-content: space-between; }
+
+.nav__group1 {
+  align-items: stretch; }
+
+.nav__link {
+  line-height: 2;
+  text-decoration: none;
+  width: 130px;
+  height: 50px;
+  text-align: left;
+  padding: 10px;
+  color: #ffffff; }
+
+.nav__link_active {
+  border-bottom: 2px solid #ffc925; }
+
+.nav__login-button {
+  background: #ff8900;
+  width: 125px;
+  color: #fff; }
+
+.nav__login-button img {
+  margin-right: 15px; }
+
+.nav__login-button-caption {
+  line-height: 1; }
+
+.header__main {
+  display: flex;
+  justify-content: center; }
+
+.header__content-wrap {
+  justify-content: center;
+  min-height: 120px;
+  max-width: 1360px;
+  width: 100%; }
+
+.header__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.header__logo {
+  justify-content: left;
+  align-items: center;
+  width: 24.6%;
+  margin-right: 0 10px; }
+
+.header__phone-basket {
+  align-items: center;
+  justify-content: space-between;
+  width: 75.4%;
+  margin-left: 0 10px; }
+
+.header__phones {
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  width: 575px;
+  background-color: #f5f5f5; }
+
+.header__callme-button {
+  height: 50px;
+  background: #ff8900; }
+
+.header__phone-item {
+  flex-grow: 1;
+  text-align: center; }
+
+.header__callme-button {
+  flex-grow: 1;
+  color: #ffffff; }
+
+.header__callme-button img {
+  margin-right: 15px; }
+
+.header__callme-button-caption {
+  line-height: 1; }
+
+.header__compare-basket {
+  justify-content: space-around;
+  align-items: center;
+  width: 325px; }
+
+.header__cfb-image_position {
+  position: relative; }
+
+.header__cfb-image {
+  height: 35px;
+  display: flex;
+  justify-content: center; }
+
+.header__cfb-caption {
+  width: 33.3%;
+  padding-top: 11px;
+  font-size: 13px;
+  text-align: center; }
+
+.header__basket-counter {
+  position: absolute;
+  height: 32px;
+  width: 40px;
+  top: -25px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3px;
+  padding-right: 5px;
+  background-image: url(../images/icons/digits_bg.png);
+  background-repeat: no-repeat; }
