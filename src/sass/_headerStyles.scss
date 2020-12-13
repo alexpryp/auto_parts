@@ -1,7 +1,7 @@
 header {
     height: 175px;
 }
-nav {
+.nav {
     display: flex;
     justify-content: center;
     height: 50px;
@@ -20,20 +20,6 @@ nav {
     display: flex;
 }
 
-.nav__login-button,
-.header__callme-button {
-    justify-content: center;
-    align-items: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-         appearance: none;
-    border: 0;
-    border-radius: 0;
-    padding: 0;
-}
-
-
-
 .nav__content-wrap {
     max-width: 1360px;
     width: 100%;
@@ -48,10 +34,12 @@ nav {
 .nav__link {
     line-height: 2;
     text-decoration: none;
-    width: 130px;
+    margin-right: 31px;
+    /* width: 130px; */
+    font-size: 16px;
     height: 50px;
     text-align: left;
-    padding: 10px;
+    padding: 10px 0;
     color: #ffffff;
 }
 .nav__link_active {
@@ -76,7 +64,7 @@ nav {
 }
 .header__content-wrap {
     justify-content: center;
-    min-height: 120px;
+    min-height: 125px;
     max-width: 1360px;
     width: 100%;
 }
@@ -89,13 +77,13 @@ nav {
     justify-content: left;
     align-items: center;
     width: 24.6%;
-    margin-right: 0 10px;
+    margin-right: 10px;
 }
 .header__phone-basket {
     align-items: center;
     justify-content: space-between;
     width: 75.4%;
-    margin-left: 0 10px;
+    margin-left: 10px;
 }
 
 .header__phones {
@@ -111,6 +99,8 @@ nav {
     background: #ff8900;
 }
 .header__phone-item {
+    font-weight: bold;
+    font-style: italic;
     flex-grow: 1;
     text-align: center;
 }
@@ -131,10 +121,8 @@ nav {
     width: 325px;
 }
 
-.header__cfb-image_position {
-    position: relative;
-}
 .header__cfb-image {
+    position: relative;
     height: 35px;
     display: flex;
     justify-content: center;
@@ -148,13 +136,16 @@ nav {
 .header__basket-counter {
     position: absolute;
     height: 32px;
-    width: 40px;
+    width: 34px;
     top: -25px;
     font-size: 13px;
     color: #ffffff;
     text-align: center;
     padding-top: 3px;
-    padding-right: 5px;
     background-image: url(../images/icons/digits_bg.png);
     background-repeat: no-repeat;
+}
+.header__cfb-divider {
+    height: 64px;;
+    border-left: 1px solid #e4e4e4;
 }

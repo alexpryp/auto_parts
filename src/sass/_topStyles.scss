@@ -1,0 +1,111 @@
+.top,
+.top__content,
+.top__burger-icon,
+.top__menu-header,
+.top__menu-item {
+    display: flex;
+}
+
+.top {
+    justify-content: center;
+}
+.top__wrapper {
+    max-width: 1360px;
+    width: 100%;
+}
+.top__content {
+    width: 100%;
+    justify-content: space-between;
+}
+.top__menu {
+    margin-right: 10px;
+}
+.top__menu-header {
+    align-items: center;
+    width: 325px;
+    height: 56px;
+    background-color: #ff9e00;
+}
+.top__menu-caption {
+    font-size: 26px;
+    color: #fff;
+}
+.top__burger-icon {
+    justify-content: center;
+    align-items: center;
+    width: 61px;
+    height: 56px;
+    font-size: 26px;
+    border-right: 1px solid #de7300;
+    background-color: #db7200;
+}
+.top__menu-title {
+    padding-left: 22px;
+}
+.top__menu-item {
+    text-decoration: none;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    font-size: 22px;
+    border-bottom: 1px solid #f1f1f1;
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+}
+.top__menu-item:visited {
+    text-decoration: none;
+    color: #000000;
+}
+.top__menu-item:active {
+    text-decoration: none;
+}
+.top__menu-item:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.top__menu-item_first {
+    height: 59px;
+    color: #000000;
+}
+
+.top__forms {
+    height: 450px;
+    width: 1015px;
+    margin-left: 10px;
+    background-color: #000;
+}
+.top__forms-search {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 56px;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.top__forms-search-divider {
+    height: 37px;
+    border-left: 1px solid #dadada;
+}
+#search {
+    padding: 0 28px;
+    flex-grow: 1;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+#categories {
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+    appearance: auto;
+    padding: 10px;
+    height: 100%;
+    width: 148px;
+    color: #616161;
+    background-color: #f5f5f5;
+}
+.top__forms-search-button {
+    width: 166px;
+    height: 100%;
+    background-color: #ff8900;
+    color: #ffffff;
+}

@@ -10,3 +10,21 @@ html, body {
     padding: 0px;
     font-family: 'Roboto', sans-serif;
 }
+
+//Resetting the styles of form elements
+.nav__login-button,
+.header__callme-button,
+.top__forms-search-button,
+#search,
+#categories {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    outline: none;
+}

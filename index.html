@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <div class="nav__content-wrap">
                 <div class="nav__content">
                     <div class="nav__group1">
@@ -50,14 +50,16 @@
                                 </div>
                                 <div class="header__cfb-caption">СРАВНЕНИЕ</div>
                             </div>
+                            <div class="header__cfb-divider"></div>
                             <div class="header__cfb-container">
                                 <div class="header__cfb-image">
                                     <img src="build/images/icons/favorites_icon.png" alt="favorites icon">
                                 </div>
                                 <div class="header__cfb-caption">ИЗБРАННОЕ</div>
                             </div>
+                            <div class="header__cfb-divider"></div>
                             <div class="header__cfb-container">
-                                <div class="header__cfb-image header__cfb-image_position">
+                                <div class="header__cfb-image">
                                     <div class="header__basket-counter">
                                         5
                                     </div>
@@ -71,5 +73,54 @@
             </div>
         </div>
     </header>
+    <section class="top">
+        <div class="top__wrapper">
+            <div class="top__content">
+                <div class="top__menu">
+                    <div class="top__menu-header">
+                        <div class="top__burger-icon">
+                            <img src="build/images/icons/burger_icon.png" alt="burger icon">
+                        </div>
+                        <div class="top__menu-title">
+                            <div class="top__menu-caption">Меню</div>
+                        </div>
+                    </div>
+                    <a href="#" class="top__menu-item top__menu-item_first">
+                        ССЫЛКА 1 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 2 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 3 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 4 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 5 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 6 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                    <a href="#" class="top__menu-item">
+                        ССЫЛКА 7 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                    </a>
+                </div>
+                <div class="top__forms">
+                    <form class="top__forms-search">
+                        <input type="search" id="search" name="search" placeholder="Поиск по сайту"><br>
+                        <div class="top__forms-search-divider"></div>
+                        <select id="categories" name="categories">
+                            <option value="allCategories">Все категории</option>
+                        </select>
+                        <button class="top__forms-search-button">
+                            ПОИСК
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
