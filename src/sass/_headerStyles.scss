@@ -76,13 +76,15 @@ header {
 .header__logo {
     justify-content: left;
     align-items: center;
-    width: 24.6%;
+    /* width: 24.6%; */
+    width: 325px;
     margin-right: 10px;
 }
 .header__phone-basket {
     align-items: center;
     justify-content: space-between;
-    width: 75.4%;
+    /* width: 75.4%; */
+    width: 1015px;
     margin-left: 10px;
 }
 
@@ -95,18 +97,16 @@ header {
 }
 
 .header__callme-button {
+    width: 198px;
     height: 50px;
     background: #ff8900;
+    color: #ffffff;
 }
 .header__phone-item {
     font-weight: bold;
     font-style: italic;
     flex-grow: 1;
     text-align: center;
-}
-.header__callme-button {
-    flex-grow: 1;
-    color: #ffffff;
 }
 .header__callme-button img {
     margin-right: 15px;
@@ -118,7 +118,8 @@ header {
 .header__compare-basket {
     justify-content: space-around;
     align-items: center;
-    width: 325px;
+    width: 315px;
+    margin-right: 20px;
 }
 
 .header__cfb-image {
