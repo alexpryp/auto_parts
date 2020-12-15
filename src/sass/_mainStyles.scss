@@ -18,8 +18,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-size: 48px;
-    padding: 13px;
+    font-size: 35px;
+    padding: 13px 13px 13px 0px;
     border-bottom: 1px solid #ffad00;
 }
 .main__linktocatalog {
@@ -27,7 +27,8 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-grow: 1;
-    padding: 13px;
+    padding: 13px 0 13px 13px;
+    font-size: 13px;
     border-bottom: 1px solid #dbdbdb;
 }
 .main_linkarrow {
@@ -57,7 +58,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 319px;
-    margin: 20px 10px;
+    margin: 20px 10px 13px 10px;
 }
 .main__productcard-mark {
     display: flex;
