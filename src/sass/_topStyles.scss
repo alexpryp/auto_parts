@@ -1,12 +1,5 @@
-.top,
-.top__content,
-.top__burger-icon,
-.top__menu-header,
-.top__menu-item {
-    display: flex;
-}
-
 .top {
+    display: flex;
     justify-content: center;
 }
 .top__wrapper {
@@ -14,6 +7,7 @@
     width: 100%;
 }
 .top__content {
+    display: flex;
     width: 100%;
     justify-content: space-between;
 }
@@ -21,6 +15,7 @@
     margin-right: 10px;
 }
 .top__menu-header {
+    display: flex;
     align-items: center;
     width: 325px;
     height: 56px;
@@ -31,6 +26,7 @@
     color: #fff;
 }
 .top__burger-icon {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 61px;
@@ -43,6 +39,7 @@
     padding-left: 22px;
 }
 .top__menu-item {
+    display: flex;
     text-decoration: none;
     padding: 0 40px;
     align-items: center;
@@ -290,6 +287,7 @@
 }
 #top__forms-reset-button,
 #top__forms-submit-button {
+    display: flex;
     font-size: 18px;
     height: 100%;
     width: 210px;

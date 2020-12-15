@@ -7,28 +7,17 @@ header {
     height: 50px;
     background-color: #696969;
 }
-.nav__content, 
-.nav__group1, 
-.nav__login-button,
-.header__content-wrap,
-.header__content,
-.header__logo,
-.header__phone-basket,
-.header__phones,
-.header__callme-button,
-.header__compare-basket  {
-    display: flex;
-}
-
 .nav__content-wrap {
     max-width: 1360px;
     width: 100%;
 }
 .nav__content {
+    display: flex;
     width: 100%;
     justify-content: space-between;
 }
 .nav__group1 {
+    display: flex;
     align-items: stretch;
 }
 .nav__link {
@@ -46,6 +35,7 @@ header {
     border-bottom: 2px solid #ffc925; 
 }
 .nav__login-button {
+    display: flex;
     background: #ff8900;
 
     width: 125px;
@@ -63,6 +53,7 @@ header {
     justify-content: center;
 }
 .header__content-wrap {
+    display: flex;
     justify-content: center;
     min-height: 125px;
     max-width: 1360px;
@@ -74,6 +65,7 @@ header {
     justify-content: space-between;
 }
 .header__logo {
+    display: flex;
     justify-content: left;
     align-items: center;
     /* width: 24.6%; */
@@ -81,6 +73,7 @@ header {
     margin-right: 10px;
 }
 .header__phone-basket {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     /* width: 75.4%; */
@@ -89,6 +82,7 @@ header {
 }
 
 .header__phones {
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 50px;
@@ -97,6 +91,7 @@ header {
 }
 
 .header__callme-button {
+    display: flex;
     width: 198px;
     height: 50px;
     background: #ff8900;
@@ -116,6 +111,7 @@ header {
 }
 
 .header__compare-basket {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     width: 315px;
