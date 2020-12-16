@@ -90,18 +90,10 @@ footer {
     padding-bottom: 10px;
     border-bottom: 1px solid #ff8500;
 }
-.footer__block2-4-1-body a,
-.footer__block2-4-1-body a:visited,
-.footer__block2-4-1-body a:active,
-.footer__block2-4-1-body a:hover,
-.footer__block2-4-2-body a,
-.footer__block2-4-2-body a:visited,
-.footer__block2-4-2-body a:active,
-.footer__block2-4-2-body a:hover,
-.footer__block2-4-3-body a,
-.footer__block2-4-3-body a:visited,
-.footer__block2-4-3-body a:active,
-.footer__block2-4-3-body a:hover {
+.footer__block2-4 a,
+.footer__block2-4 a:visited,
+.footer__block2-4 a:active,
+.footer__block2-4 a:hover {
     color: #ffffff;
 }
 .footer__block2-4-1-header-name {
@@ -140,7 +132,7 @@ footer {
 .footer__bottom-logocop {
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    width: 50%;
     padding-top: 16px;
 }
 .footer__bottom-divider {
@@ -155,5 +147,59 @@ footer {
 }
 .footer__bottom-logosocial {
     display: flex;
-    flex-grow: 1;
+    justify-content: space-between;
+    width: 50%;
+}
+.footer__bottom-social {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 8px;
+}
+.footer__bottom-social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    height: 49px;
+    width: 49px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #7b8092;
+}
+
+.footer__bottom-social-item:visited,
+.footer__bottom-social-item:active {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.footer__bottom-social-item:hover {
+    color: #ffc925;
+    border: 1px solid #ffc925;
+}
+.footer__bottom-logodevelop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 8px;
+}
+.footer__bottom-wezomlogo {
+    display: flex;
+    align-items: center;
+    height: 42px;
+}
+.footer__bottom-logodevelop-divider {
+    height: 42px;
+    margin: 0 19px;
+    border-left: 1px solid #787878;
+}
+.footer__bottom-logodevelop-text1,
+.footer__bottom-logodevelop-text2 {
+    font-size: 12px;
+    margin: 8px 0;
+}
+.footer__bottom-logodevelop-text1 {
+    color: #a0a9b2;
+}
+.footer__bottom-logodevelop-text2 {
+    color: #ffffff;
 }
