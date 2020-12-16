@@ -22,7 +22,7 @@
     background-color: #ff9e00;
 }
 .top__menu-caption {
-    font-size: 26px;
+    font-size: 20px;
     color: #fff;
 }
 .top__burger-icon {
@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: space-between;
     height: 56px;
-    font-size: 22px;
+    font-size: 16px;
     border-bottom: 1px solid #f1f1f1;
     border-left: 1px solid #f1f1f1;
     border-right: 1px solid #f1f1f1;
@@ -59,7 +59,8 @@
 }
 .top__menu-item:hover {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
+    background-color: #ff9e00;
 }
 .top__menu-item_first {
     height: 59px;
@@ -89,7 +90,7 @@
     padding: 0 28px;
     flex-grow: 1;
     height: 100%;
-    font-size: 19px;
+    font-size: 14px;
     background-color: #f5f5f5;
 }
 .top__forms-select-wrapper{
@@ -105,7 +106,7 @@
     height: 100%;
     width: 148px;
     color: #616161;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #f5f5f5;
 }
 .top__forms-select-custom-arrow {
@@ -113,7 +114,7 @@
     align-items: center;
     font-size: 9px;
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 19px;
     z-index: 1;
     text-align: center;
@@ -126,9 +127,12 @@
 .top__forms-search-button {
     width: 166px;
     height: 100%;
-    font-size: 22px;
+    font-size: 16px;
     background-color: #ff8900;
     color: #ffffff;
+}
+.top__forms-search-button:hover {
+    background-color: #db7200;
 }
 
 .top__forms-biggroup {
@@ -149,8 +153,9 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     color: #a9aeb3;
+    border-bottom: 2px solid #606a76;
 }
 .top__forms-partlink:visited {
     text-decoration: none;
@@ -162,7 +167,8 @@
 }
 .top__forms-partlink:hover {
     text-decoration: none;
-    color: none;
+    color: #ffffff;
+    border-bottom: 2px solid #ffc925;
 }
 .top__forms-partlink img {
     margin-right: 20px;
@@ -196,9 +202,14 @@
     color: #696969;
     background-color: #efefef;
 }
+.top__forms-tab:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ff8900;
+}
 .top__forms-tab_active {
     color: #ffffff;
-    background-color: #ff8900;;
+    background-color: #ff8900;
 }
 .top__forms-selects {
     display: flex;
@@ -288,7 +299,7 @@
 #top__forms-reset-button,
 #top__forms-submit-button {
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
     height: 100%;
     width: 210px;
     color: #ffffff;
@@ -296,6 +307,12 @@
 #top__forms-reset-button {
     background-color: #ff4800;
 }
+#top__forms-reset-button:hover {
+    background-color: #a32f01;
+}
 #top__forms-submit-button {
     background: linear-gradient(to right, #ff8500, #ffad00);
+}
+#top__forms-submit-button:hover {
+    background: linear-gradient(to right, #d36e00, #e59100);
 }

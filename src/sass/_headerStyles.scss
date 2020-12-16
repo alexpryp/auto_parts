@@ -24,12 +24,14 @@ header {
     line-height: 2;
     text-decoration: none;
     margin-right: 31px;
-    /* width: 130px; */
-    font-size: 16px;
+    font-size: 12px;
     height: 50px;
     text-align: left;
     padding: 10px 0;
     color: #ffffff;
+}
+.nav__link:hover {
+    border-bottom: 2px solid #ffc925; 
 }
 .nav__link_active {
     border-bottom: 2px solid #ffc925; 
@@ -37,14 +39,17 @@ header {
 .nav__login-button {
     display: flex;
     background: #ff8900;
-
     width: 125px;
     color: #fff;
 }
+.nav__login-button:hover {
+    background: #db7200;
+}
 .nav__login-button img {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .nav__login-button-caption {
+    font-size: 12px;
     line-height: 1;
 }
 
@@ -97,6 +102,9 @@ header {
     background: #ff8900;
     color: #ffffff;
 }
+.header__callme-button:hover {
+    background: #db7200;
+}
 .header__phone-item {
     font-weight: bold;
     font-style: italic;
@@ -107,6 +115,7 @@ header {
     margin-right: 15px;
 }
 .header__callme-button-caption {
+    font-size: 12px;
     line-height: 1;
 }
 
@@ -117,7 +126,9 @@ header {
     width: 315px;
     margin-right: 20px;
 }
-
+.header__cfb-container:hover {
+    cursor: pointer;
+}
 .header__cfb-image {
     position: relative;
     height: 35px;
@@ -127,7 +138,7 @@ header {
 .header__cfb-caption {
     width: 33.3%;
     padding-top: 11px;
-    font-size: 13px;
+    font-size: 10px;
     text-align: center;
 }
 .header__basket-counter {

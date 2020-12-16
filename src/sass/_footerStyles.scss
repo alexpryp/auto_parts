@@ -63,6 +63,9 @@ footer {
     color: #ffffff;
     background-color: #ff8900;
 }
+.footer__subscribe-submitbutton:hover {
+    background: #db7200;
+}
 .footer__block2-4 {
     display: flex;
     width: 50%;
@@ -92,9 +95,11 @@ footer {
 }
 .footer__block2-4 a,
 .footer__block2-4 a:visited,
-.footer__block2-4 a:active,
-.footer__block2-4 a:hover {
+.footer__block2-4 a:active {
     color: #ffffff;
+}
+.footer__block2-4 a:hover {
+    color: #ffc925;
 }
 .footer__block2-4-1-header-name {
     min-width: 140px;

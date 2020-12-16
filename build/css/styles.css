@@ -59,12 +59,14 @@ header {
   line-height: 2;
   text-decoration: none;
   margin-right: 31px;
-  /* width: 130px; */
-  font-size: 16px;
+  font-size: 12px;
   height: 50px;
   text-align: left;
   padding: 10px 0;
   color: #ffffff; }
+
+.nav__link:hover {
+  border-bottom: 2px solid #ffc925; }
 
 .nav__link_active {
   border-bottom: 2px solid #ffc925; }
@@ -75,10 +77,14 @@ header {
   width: 125px;
   color: #fff; }
 
+.nav__login-button:hover {
+  background: #db7200; }
+
 .nav__login-button img {
-  margin-right: 15px; }
+  margin-right: 10px; }
 
 .nav__login-button-caption {
+  font-size: 12px;
   line-height: 1; }
 
 .header__main {
@@ -128,6 +134,9 @@ header {
   background: #ff8900;
   color: #ffffff; }
 
+.header__callme-button:hover {
+  background: #db7200; }
+
 .header__phone-item {
   font-weight: bold;
   font-style: italic;
@@ -138,6 +147,7 @@ header {
   margin-right: 15px; }
 
 .header__callme-button-caption {
+  font-size: 12px;
   line-height: 1; }
 
 .header__compare-basket {
@@ -146,6 +156,9 @@ header {
   align-items: center;
   width: 315px;
   margin-right: 20px; }
+
+.header__cfb-container:hover {
+  cursor: pointer; }
 
 .header__cfb-image {
   position: relative;
@@ -156,7 +169,7 @@ header {
 .header__cfb-caption {
   width: 33.3%;
   padding-top: 11px;
-  font-size: 13px;
+  font-size: 10px;
   text-align: center; }
 
 .header__basket-counter {
@@ -199,7 +212,7 @@ header {
   background-color: #ff9e00; }
 
 .top__menu-caption {
-  font-size: 26px;
+  font-size: 20px;
   color: #fff; }
 
 .top__burger-icon {
@@ -222,7 +235,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 56px;
-  font-size: 22px;
+  font-size: 16px;
   border-bottom: 1px solid #f1f1f1;
   border-left: 1px solid #f1f1f1;
   border-right: 1px solid #f1f1f1; }
@@ -236,7 +249,8 @@ header {
 
 .top__menu-item:hover {
   text-decoration: none;
-  color: #000000; }
+  color: #ffffff;
+  background-color: #ff9e00; }
 
 .top__menu-item_first {
   height: 59px;
@@ -265,7 +279,7 @@ header {
   padding: 0 28px;
   flex-grow: 1;
   height: 100%;
-  font-size: 19px;
+  font-size: 14px;
   background-color: #f5f5f5; }
 
 .top__forms-select-wrapper {
@@ -281,7 +295,7 @@ header {
   height: 100%;
   width: 148px;
   color: #616161;
-  font-size: 16px;
+  font-size: 14px;
   background-color: #f5f5f5; }
 
 .top__forms-select-custom-arrow {
@@ -289,7 +303,7 @@ header {
   align-items: center;
   font-size: 9px;
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 19px;
   z-index: 1;
   text-align: center;
@@ -302,9 +316,12 @@ header {
 .top__forms-search-button {
   width: 166px;
   height: 100%;
-  font-size: 22px;
+  font-size: 16px;
   background-color: #ff8900;
   color: #ffffff; }
+
+.top__forms-search-button:hover {
+  background-color: #db7200; }
 
 .top__forms-biggroup {
   flex-grow: 1;
@@ -324,8 +341,9 @@ header {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 24px;
-  color: #a9aeb3; }
+  font-size: 18px;
+  color: #a9aeb3;
+  border-bottom: 2px solid #606a76; }
 
 .top__forms-partlink:visited {
   text-decoration: none;
@@ -337,7 +355,8 @@ header {
 
 .top__forms-partlink:hover {
   text-decoration: none;
-  color: none; }
+  color: #ffffff;
+  border-bottom: 2px solid #ffc925; }
 
 .top__forms-partlink img {
   margin-right: 20px; }
@@ -370,6 +389,11 @@ header {
   font-size: 19px;
   color: #696969;
   background-color: #efefef; }
+
+.top__forms-tab:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #ff8900; }
 
 .top__forms-tab_active {
   color: #ffffff;
@@ -463,7 +487,7 @@ header {
 #top__forms-reset-button,
 #top__forms-submit-button {
   display: flex;
-  font-size: 18px;
+  font-size: 14px;
   height: 100%;
   width: 210px;
   color: #ffffff; }
@@ -471,8 +495,14 @@ header {
 #top__forms-reset-button {
   background-color: #ff4800; }
 
+#top__forms-reset-button:hover {
+  background-color: #a32f01; }
+
 #top__forms-submit-button {
   background: linear-gradient(to right, #ff8500, #ffad00); }
+
+#top__forms-submit-button:hover {
+  background: linear-gradient(to right, #d36e00, #e59100); }
 
 .main {
   display: flex;
@@ -807,6 +837,9 @@ footer {
   color: #ffffff;
   background-color: #ff8900; }
 
+.footer__subscribe-submitbutton:hover {
+  background: #db7200; }
+
 .footer__block2-4 {
   display: flex;
   width: 50%;
@@ -836,9 +869,11 @@ footer {
 
 .footer__block2-4 a,
 .footer__block2-4 a:visited,
-.footer__block2-4 a:active,
-.footer__block2-4 a:hover {
+.footer__block2-4 a:active {
   color: #ffffff; }
+
+.footer__block2-4 a:hover {
+  color: #ffc925; }
 
 .footer__block2-4-1-header-name {
   min-width: 140px; }
