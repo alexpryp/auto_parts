@@ -23,7 +23,11 @@ html, body {
 #top__forms-submit-button,
 .main__productcard-buybutton,
 .footer__subscribe-input,
-.footer__subscribe-submitbutton {
+.footer__subscribe-submitbutton,
+#popup-login__submit,
+#popup-login__throughfacebook,
+#popup-login__throughtwitter,
+#popup-login__throughgoogle {
     cursor: pointer;
     justify-content: center;
     align-items: center;

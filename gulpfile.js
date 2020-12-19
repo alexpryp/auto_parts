@@ -17,8 +17,7 @@ function styles() {
 }
 
 function scripts() {
-	return gulp.src(['./src/js/main.js', './src/js/setupFunction.js', './src/js/additionalFunctions.js'])
-				.pipe(concat('script.js'))
+	return gulp.src('./src/js/script.js')
 				.pipe(babel({
 		            presets: ['@babel/env']
                 }))
@@ -28,7 +27,7 @@ function scripts() {
 
 function watch() { 
 	gulp.watch('./src/sass/**/*.scss', styles);
-	//gulp.watch('./src/js/**/*.js', scripts);
+	gulp.watch('./src/js/**/*.js', scripts);
 }
 
 gulp.task('styles', styles);

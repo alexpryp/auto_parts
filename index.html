@@ -778,8 +778,54 @@
             </div>
         </div>
     </footer>
-    <div class="popup-enter">
+    <div class="popup-login">
+        <div class="popup-login__body">
+            <div class="popup-login__content">
+                <a href="#" class="popup-login__close">
+                    <img src="build/images/icons/closepopup_icon.png" alt="close icon">
+                </a>
+                <div class="popup-login__throughemail">
+                    <h2>Вход в личный кабинет</h2>
+                    <form action="#">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" name="email" placeholder="mikel_ivanov98@gmail.com" value="">
+                        <label for="parol">Пароль:</label>
+                        <input type="password" id="password" name="password" placeholder="*************" value="">
+                        <div id="popup-login__rememder-input"><input type="checkbox" name="remember" id="remember"> Запомнить меня</div>
+                        <div id="popup-login__forgotpassword-block">
+                            <div id="popup-login__forgotpassword">
+                                <a href="#">Забыли пароль?</a>
+                            </div>
+                            <div id="popup-login__registration">
+                                <a href="#">Регистрация</a>
+                            </div>
+                        </div>
+                        <input type="submit" value="Войти в личный кабинет" id="popup-login__submit">
+                    </form> 
+                </div>
+                <div class="popup-login__divider"></div>
+                <div class="popup-login__throughother">
+                    <h2>Войти с помощью</h2>
+                    <button id="popup-login__throughfacebook">
+                        <i class="fab fa-facebook-f"></i> 
+                        Facebook
+                    </button>
+                    <button id="popup-login__throughtwitter">
+                        <i class="fab fa-twitter"></i> 
+                        Twitter
+                    </button>
+                    <button id="popup-login__throughgoogle">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-callback">
         
     </div>
+
+    <script def src="build/js/script.js" ></script>
 </body>
 </html>

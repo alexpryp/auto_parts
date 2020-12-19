@@ -1,0 +1,140 @@
+.popup-login {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 900;
+}
+.popup-login_show {
+    display: flex;
+}
+.popup-login__body {
+    position: relative;
+    width: 755px;
+    height: 431px;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    color: #000000;
+}
+.popup-login__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.popup-login__content {
+    display: flex;
+    align-items: stretch;
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+.popup-login__close {
+    display: block;
+    position: absolute;
+    top: -48px;
+    right: -52px;
+    padding: 5px 10px;
+    color: #fff;
+}
+.popup-login__throughemail,
+.popup-login__throughother {
+    width: 50%;
+}
+.popup-login__throughemail {
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    input[type="email"],
+    input[type="password"] {
+        margin-top: 12px;
+        margin-bottom: 15px;
+        padding: 0px 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0;
+        outline: none;
+        border: 1px solid #000000;
+        
+    }
+    label {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+}
+#email,
+#password {
+    width: 299px;
+    height: 40px;;
+}
+#popup-login__rememder-input {
+    margin-top: 15px;
+    font-size: 14px;
+    input {
+        cursor: pointer;
+        border-radius: 0;
+        width: 18px;
+        height: 18px;
+        outline: none;
+        border: 1px solid #000000;
+    }
+}
+#popup-login__forgotpassword-block {
+    display: flex;
+    font-size: 14px;
+    margin-top: 20px;
+    a,
+    a:visited,
+    a:active {
+        color: #000000;
+    }
+}
+#popup-login__forgotpassword,
+#popup-login__registration {
+    width: 50%;
+}
+#popup-login__submit{
+    height: 50px;
+    width: 210px;
+    margin-top: 27px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #afb9c6;
+}
+.popup-login__divider {
+    height: 371px;
+    margin: 0 40px;
+    border-left: 1px solid #dbdbdb; 
+}
+
+.popup-login__throughother {
+
+}
+#popup-login__throughfacebook,
+#popup-login__throughtwitter,
+#popup-login__throughgoogle {
+    width: 293px;
+    height: 50px;
+    color: #ffffff;
+}
+#popup-login__throughfacebook {
+    margin-top: 48px;
+    background-color: #3b5998;
+}
+#popup-login__throughtwitter {
+    margin-top: 23px;
+    background-color: #41abe1;
+}
+#popup-login__throughgoogle {
+    margin-top: 24px;
+    background-color: #ea4335;
+}
