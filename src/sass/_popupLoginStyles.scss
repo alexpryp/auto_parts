@@ -1,18 +1,3 @@
-.popup-login {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 900;
-}
-.popup-login_show {
-    display: flex;
-}
 .popup-login__body {
     position: relative;
     width: 755px;
@@ -76,6 +61,13 @@
     width: 299px;
     height: 40px;;
 }
+#email.warning-input,
+#password.warning-input {
+    border: 1px solid red;
+}
+label.warning-label {
+    color: #ff0000;
+}
 #popup-login__rememder-input {
     margin-top: 15px;
     font-size: 14px;
@@ -102,13 +94,16 @@
 #popup-login__registration {
     width: 50%;
 }
-#popup-login__submit{
+#popup-login__submit {
     height: 50px;
     width: 210px;
     margin-top: 27px;
     color: #ffffff;
     font-size: 14px;
     background-color: #afb9c6;
+}
+#popup-login__submit:hover {
+    background-color: #2f445f;
 }
 .popup-login__divider {
     height: 371px;

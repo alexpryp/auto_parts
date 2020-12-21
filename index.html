@@ -47,6 +47,9 @@
                         <div class="header__compare-basket">
                             <div class="header__cfb-container">
                                 <div class="header__cfb-image">
+                                    <div class="header__compare-counter">
+                                        <span>0</span>
+                                    </div>
                                     <img src="build/images/icons/compare_icon.png" alt="compare icon">
                                 </div>
                                 <div class="header__cfb-caption">СРАВНЕНИЕ</div>
@@ -54,6 +57,9 @@
                             <div class="header__cfb-divider"></div>
                             <div class="header__cfb-container">
                                 <div class="header__cfb-image">
+                                    <div class="header__favorites-counter">
+                                        <span>0</span>
+                                    </div>
                                     <img src="build/images/icons/favorites_icon.png" alt="favorites icon">
                                 </div>
                                 <div class="header__cfb-caption">ИЗБРАННОЕ</div>
@@ -109,7 +115,7 @@
                     </a>
                 </div>
                 <div class="top__forms">
-                    <form action="" class="top__forms-search">
+                    <form action="" class="top__forms-search" name="top__forms-search">
                         <input type="search" id="search" name="search" placeholder="Поиск по сайту"><br>
                         <div class="top__forms-search-divider"></div>
                         <div class="top__forms-select-wrapper">
@@ -152,7 +158,7 @@
                                 Ссылка 5
                             </a>
                         </div>
-                        <form action="" class="top__forms-selectgroup">
+                        <form name="topforms" action="" class="top__forms-selectgroup">
                             <div class="top__forms-tabs-wrapper">
                                 <div class="top__forms-tabsgroup">
                                     <div class="top__forms-tab">Tab 1</div>
@@ -230,15 +236,15 @@
                                         Цена
                                     </div>
                                     <div class="top__forms-price-input-wrapper">
-                                        <input type="text" placeholder="50">
+                                        <input name="minprice" type="number" placeholder="50">
                                     </div>
                                     <div class="top__forms-price-input-wrapper">
-                                        <input type="text" placeholder="250000">
+                                        <input name="maxprice" type="number" placeholder="25000">
                                     </div>
                                 </div>
                             </div>
                             <div class="top__forms-submit-wrapper">
-                                <button id="top__forms-reset-button">
+                                <button type="reset" id="top__forms-reset-button">
                                     X Очистить фильтр
                                 </button>
                                 <input type="submit" id="top__forms-submit-button" value="ПРИМЕНИТЬ ФИЛЬТР"></input>
@@ -360,7 +366,7 @@
                                     <img src="build/images/icons/compare2_icon.png" alt="compare icon">
                                 </div>
                                 <div class="main__productcard-compare-link">
-                                    <a href="#">Сравнить товар</a>
+                                    <a href="#" class="main__add-to-compare">Сравнить товар</a>
                                 </div>
                             </div>
                             <div class="main__productcard-favorites">
@@ -368,7 +374,7 @@
                                     <img src="build/images/icons/favorites2_icon.png" alt="favorites icon">
                                 </div>
                                 <div class="main__productcard-favorites-link">
-                                    <a href="">В избранное</a>
+                                    <a href="#" class="main__add-to-favorite">В избранное</a>
                                 </div>
                             </div>
                         </div>
@@ -460,7 +466,7 @@
                                     <img src="build/images/icons/compare2_icon.png" alt="compare icon">
                                 </div>
                                 <div class="main__productcard-compare-link">
-                                    <a href="#">Сравнить товар</a>
+                                    <a href="#" class="main__add-to-compare">Сравнить товар</a>
                                 </div>
                             </div>
                             <div class="main__productcard-favorites">
@@ -468,7 +474,7 @@
                                     <img src="build/images/icons/favorites2_icon.png" alt="favorites icon">
                                 </div>
                                 <div class="main__productcard-favorites-link">
-                                    <a href="">В избранное</a>
+                                    <a href="#" class="main__add-to-favorite">В избранное</a>
                                 </div>
                             </div>
                         </div>
@@ -562,7 +568,7 @@
                                     <img src="build/images/icons/compare2_icon.png" alt="compare icon">
                                 </div>
                                 <div class="main__productcard-compare-link">
-                                    <a href="#">Сравнить товар</a>
+                                    <a href="#" class="main__add-to-compare">Сравнить товар</a>
                                 </div>
                             </div>
                             <div class="main__productcard-favorites">
@@ -570,7 +576,7 @@
                                     <img src="build/images/icons/favorites2_icon.png" alt="favorites icon">
                                 </div>
                                 <div class="main__productcard-favorites-link">
-                                    <a href="">В избранное</a>
+                                    <a href="#" class="main__add-to-favorite">В избранное</a>
                                 </div>
                             </div>
                         </div>
@@ -650,7 +656,7 @@
                                     <img src="build/images/icons/compare2_icon.png" alt="compare icon">
                                 </div>
                                 <div class="main__productcard-compare-link">
-                                    <a href="#">Сравнить товар</a>
+                                    <a href="#" class="main__add-to-compare">Сравнить товар</a>
                                 </div>
                             </div>
                             <div class="main__productcard-favorites">
@@ -658,7 +664,7 @@
                                     <img src="build/images/icons/favorites2_icon.png" alt="favorites icon">
                                 </div>
                                 <div class="main__productcard-favorites-link">
-                                    <a href="">В избранное</a>
+                                    <a href="#" class="main__add-to-favorite">В избранное</a>
                                 </div>
                             </div>
                         </div>
@@ -688,7 +694,7 @@
                 </div>
                 <form action="#" class="footer__subscribe-form" name="footer__subscribe-form">
                     <input 
-                        type="text" 
+                        type="email" 
                         id="footer__subscribe-input"
                         placeholder="Укажите свой email для подписки"
                         name="footer__subscribe-input"
@@ -797,10 +803,10 @@
                 </a>
                 <div class="popup-login__throughemail">
                     <h2>Вход в личный кабинет</h2>
-                    <form action="#">
-                        <label for="email">Ваш email:</label>
+                    <form action="#" name="login-form">
+                        <label for="email" id="labelEmail">Ваш email:</label>
                         <input type="email" id="email" name="email" placeholder="mikel_ivanov98@gmail.com" value="">
-                        <label for="parol">Пароль:</label>
+                        <label for="password" id="labelParol">Пароль:</label>
                         <input type="password" id="password" name="password" placeholder="*************" value="">
                         <div id="popup-login__rememder-input"><input type="checkbox" name="remember" id="remember"> Запомнить меня</div>
                         <div id="popup-login__forgotpassword-block">
@@ -863,6 +869,22 @@
                 <img src="build/images/icons/closepopup_icon.png" alt="close icon">
             </a>
             Вы успешно подписаны на рассылку!
+        </div>
+    </div>
+    <div class="popup-searchwarning">
+        <div class="popup-searchwarning__body">
+            <a href="#" class="popup-searchwarning__close">
+                <img src="build/images/icons/closepopup_icon.png" alt="close icon">
+            </a>
+            Для поиска введите минимум 2 символа
+        </div>
+    </div>
+    <div class="popup-topform-warning">
+        <div class="popup-topform-warning__body">
+            <a href="#" class="popup-topform-warning__close">
+                <img src="build/images/icons/closepopup_icon.png" alt="close icon">
+            </a>
+            Минимальная цена не может быть больше максимальной и цены не могут быть отрицательными
         </div>
     </div>
 
