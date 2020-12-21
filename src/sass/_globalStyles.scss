@@ -22,12 +22,14 @@ html, body {
 #top__forms-reset-button,
 #top__forms-submit-button,
 .main__productcard-buybutton,
-.footer__subscribe-input,
-.footer__subscribe-submitbutton,
+#footer__subscribe-input,
+#footer__subscribe-submitbutton,
 #popup-login__submit,
 #popup-login__throughfacebook,
 #popup-login__throughtwitter,
-#popup-login__throughgoogle {
+#popup-login__throughgoogle,
+#telnumber,
+#popup-callme__submit {
     cursor: pointer;
     justify-content: center;
     align-items: center;

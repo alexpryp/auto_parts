@@ -21,7 +21,7 @@ function scripts() {
 				.pipe(babel({
 		            presets: ['@babel/env']
                 }))
-                .pipe(uglify())
+                //.pipe(uglify())
 				.pipe(gulp.dest('./build/js'));
 }
 

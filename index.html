@@ -174,7 +174,7 @@
                                     <div class="top__forms-selects-item-custom-arrow">&#9660</div>
                                 </div>
                                 <div class="top__forms-selects-wrapper">
-                                    <select id="Select1" name="Select 2" class="top__forms-selects-item">
+                                    <select name="Select 2" class="top__forms-selects-item">
                                         <option value="Select1">Select 1</option>
                                         <option value="Select2" selected>Select 2</option>
                                         <option value="Select3">Select 3</option>
@@ -187,7 +187,7 @@
                                     <div class="top__forms-selects-item-custom-arrow">&#9660</div>
                                 </div>
                                 <div class="top__forms-selects-wrapper">
-                                    <select id="Select1" name="Select 3" class="top__forms-selects-item">
+                                    <select name="Select 3" class="top__forms-selects-item">
                                         <option value="Select1">Select 1</option>
                                         <option value="Select2">Select 2</option>
                                         <option value="Select3" selected>Select 3</option>
@@ -200,7 +200,7 @@
                                     <div class="top__forms-selects-item-custom-arrow">&#9660</div>
                                 </div>
                                 <div class="top__forms-selects-wrapper">
-                                    <select id="Select1" name="Select 4" class="top__forms-selects-item">
+                                    <select name="Select 4" class="top__forms-selects-item">
                                         <option value="Select1">Select 1</option>
                                         <option value="Select2">Select 2</option>
                                         <option value="Select3">Select 3</option>
@@ -213,7 +213,7 @@
                                     <div class="top__forms-selects-item-custom-arrow">&#9660</div>
                                 </div>
                                 <div class="top__forms-selects-wrapper">
-                                    <select id="Select1" name="Select 5" class="top__forms-selects-item">
+                                    <select name="Select 5" class="top__forms-selects-item">
                                         <option value="Select1">Select 1</option>
                                         <option value="Select2">Select 2</option>
                                         <option value="Select3">Select 3</option>
@@ -686,10 +686,21 @@
                         ПОДПИСЫВАЙТЕСЬ НА РАССЫЛКУ
                     </p>
                 </div>
-                <form action="#" class="footer__subscribe-form">
-                    <input type="text" class="footer__subscribe-input" placeholder="Укажите свой email для подписки">
-                    <input type="submit" value="ПОДПИСАТЬСЯ" class="footer__subscribe-submitbutton">
+                <form action="#" class="footer__subscribe-form" name="footer__subscribe-form">
+                    <input 
+                        type="text" 
+                        id="footer__subscribe-input"
+                        placeholder="Укажите свой email для подписки"
+                        name="footer__subscribe-input"
+                    >
+                    <input 
+                        type="submit" 
+                        value="ПОДПИСАТЬСЯ" 
+                        id="footer__subscribe-submitbutton"
+                        name="footer__subscribe-submitbutton"
+                    >
                 </form>
+                <div id="wrong-email-message">Вы ввели неверный email! Исправьте, пожалуйста!</div>
             </div>
             <div class="footer__block2-4">
                 <div class="footer__block2-4-1">
@@ -822,8 +833,37 @@
             </div>
         </div>
     </div>
-    <div class="popup-callback">
-        
+    <div class="popup-callme">
+        <div class="popup-callme__body">
+            <div class="popup-callme__content">
+                <a href="#" class="popup-callme__close">
+                    <img src="build/images/icons/closepopup_icon.png" alt="close icon">
+                </a>
+                <h2>Перезвоните мне</h2>
+                <form action="#">
+                    <label for="email">Номер телефона</label>
+                    <input 
+                        type="tel" 
+                        id="telnumber" 
+                        name="telnumber"
+                        value="+38 (0__) ___ - __ - __"
+                        autofocus
+                    >
+                    <div class="popup-callme__submit-wrapper">
+                        <input type="submit" value="Перезвоните мне" id="popup-callme__submit">
+                    </div>
+                </form> 
+
+            </div>
+        </div>
+    </div>
+    <div class="popup-successsubscript">
+        <div class="popup-successsubscript__body">
+            <a href="#" class="successsubscript__close">
+                <img src="build/images/icons/closepopup_icon.png" alt="close icon">
+            </a>
+            Вы успешно подписаны на рассылку!
+        </div>
     </div>
 
     <script def src="build/js/script.js" ></script>

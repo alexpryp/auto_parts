@@ -52,19 +52,32 @@ footer {
     display: flex;
     margin-top: 15px;
 }
-.footer__subscribe-input {
+#footer__subscribe-input {
     flex-grow: 1;
     height: 50px;
     padding: 0 25px;
 }
-.footer__subscribe-submitbutton {
+#footer__subscribe-input.footer__subscribe-input_error {
+    border: 2px solid #ff0000;
+}
+#footer__subscribe-submitbutton {
     height: 50px;
     width: 170px;
     color: #ffffff;
     background-color: #ff8900;
 }
-.footer__subscribe-submitbutton:hover {
+#footer__subscribe-submitbutton:hover {
     background: #db7200;
+}
+#wrong-email-message {
+    display: none;
+    margin: 10px 0;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #ff0000;
+}
+#wrong-email-message.wrong-email-message-show {
+    display: block;
 }
 .footer__block2-4 {
     display: flex;
