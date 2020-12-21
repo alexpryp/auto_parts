@@ -399,12 +399,10 @@ header {
   border-bottom: 2px solid #606a76; }
 
 .top__forms-partlink:visited {
-  text-decoration: none;
-  color: none; }
+  text-decoration: none; }
 
 .top__forms-partlink:active {
-  text-decoration: none;
-  color: none; }
+  text-decoration: none; }
 
 .top__forms-partlink:hover {
   text-decoration: none;
