@@ -26,28 +26,35 @@ window.addEventListener("DOMContentLoaded", function() {
         const loginPasswordInput = document.forms['login-form']['password'];
         const labelEmail = document.querySelector('#labelEmail');
         const labelPassword = document.querySelector('#labelParol');
+        let validFlag = true;
 
         if ( !emailValidate(loginEmailInput.value) ) {
             labelEmail.innerText = 'Ваш email: неверный формат email';
             loginEmailInput.classList.add('warning-input');
             labelEmail.classList.add('warning-label');
+            validFlag = false;
         } else {
             labelEmail.innerText = 'Ваш email:';
             loginEmailInput.classList.remove('warning-input');
             labelEmail.classList.remove('warning-label');
+            validFlag = true;
         }
 
         if ( loginPasswordInput.value.length < 4 ) {
             labelPassword.innerText = 'Пароль: не меньше 4 символов';
             loginPasswordInput.classList.add('warning-input');
             labelPassword.classList.add('warning-label');
+            validFlag = false;
         } else {
             labelPassword.innerText = 'Пароль:';
             loginPasswordInput.classList.remove('warning-input');
             labelPassword.classList.remove('warning-label');
+            validFlag = true;
         }
     
-        popupLogin.classList.remove('popup-login_show');
+        if ( validFlag ) {
+            popupLogin.classList.remove('popup-login_show');
+        }
     }
 
     //CallMeBack form handling-------------------------------------------------
