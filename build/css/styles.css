@@ -1216,3 +1216,52 @@ label.warning-label {
 
 #popup-callme__submit:hover {
   background: #db7200; }
+
+@media screen and (max-width: 1360px) {
+  body {
+    padding: 0 5px; }
+  header {
+    height: auto; }
+  .header__logo {
+    display: none; }
+  .header__phone-basket {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0; }
+  .header__phones {
+    margin-left: 0;
+    margin-top: 10px; }
+  .header__compare-basket {
+    width: 315px;
+    margin-top: 30px; }
+  .top__content {
+    flex-wrap: wrap; }
+  .top__menu {
+    width: 100%;
+    margin-right: 0px; }
+  .top__menu-header {
+    width: 100%; }
+  .top__forms {
+    width: 100%;
+    margin-left: 0px; }
+  .main__product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb; }
+  .main__productcard {
+    padding: 10px; }
+  .main__product-cards-divider {
+    display: none; }
+  .footer__wrapper,
+  .footer__bottom {
+    flex-wrap: wrap; }
+  .footer__block1,
+  .footer__block2-4,
+  .footer__bottom-logocop,
+  .footer__bottom-logosocial {
+    width: 100%; }
+  .footer__bottom-logosocial {
+    margin-top: 20px; } }
