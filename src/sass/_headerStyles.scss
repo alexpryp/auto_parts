@@ -7,18 +7,45 @@ header {
     height: 50px;
     background-color: #696969;
 }
+.mobile-nav {
+    display: none;
+}
+.mobile-nav_show {
+    display: block;
+}
 .nav__content-wrap {
     max-width: 1360px;
     width: 100%;
 }
 .nav__content {
     display: flex;
+    height: 50px;
     width: 100%;
     justify-content: space-between;
+}
+.nav__group {
+    display: none;
 }
 .nav__group1 {
     display: flex;
     align-items: stretch;
+}
+.nav__group2 {
+    //height: 100vh;
+    background-color: #696969;
+}
+#nav__link-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 0px 30px;
+    height: 50px;
+    width: 50px;
+    text-align: left;
+    color: #ffffff;
 }
 .nav__link {
     line-height: 2;
@@ -30,16 +57,37 @@ header {
     padding: 10px 0;
     color: #ffffff;
 }
+.nav__link-mobile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    text-decoration: none;
+    font-size: 14px;
+    height: 50px;
+    padding: 10px 0;
+    color: #ffffff;
+    background-color: #696969;
+}
 .nav__link:hover {
     border-bottom: 2px solid #ffc925; 
 }
+.nav__link-mobile:hover {
+    color: #000000;
+    background-color:  #ffc925;
+}
 .nav__link_active {
     border-bottom: 2px solid #ffc925; 
+}
+.nav__link-mobile_active {
+    color: #000000;
+    background-color:  #ffc925;
 }
 .nav__login-button {
     display: flex;
     background: #ff8900;
     width: 125px;
+    height: 50px;
     color: #fff;
 }
 .nav__login-button:hover {

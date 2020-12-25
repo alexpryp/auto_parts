@@ -1,5 +1,22 @@
 
 window.addEventListener("DOMContentLoaded", function() {
+    //Main burger navigation handling------------------------------------------
+    const linkBurge = document.getElementById('nav__link-burger');
+    const mobileNav = document.querySelector('.mobile-nav');
+    console.log(linkBurge);
+
+    linkBurge.addEventListener('click', linkBurgerHandler);
+    mobileNav.addEventListener('click', hideMobileNave);
+
+    function linkBurgerHandler( event ) {
+        event.preventDefault();
+        mobileNav.classList.toggle('mobile-nav_show');
+    }
+
+    function hideMobileNave() {
+        mobileNav.classList.toggle('mobile-nav_show');
+    }
+
     //Login form handling------------------------------------------------------
     const loginButton = document.querySelector('.nav__login-button');
     const popupLogin = document.querySelector('.popup-login');
@@ -87,6 +104,16 @@ window.addEventListener("DOMContentLoaded", function() {
                 alert('Мы Вам перезвоним по данному номеру: ' + telnumberInput.value);
             }, 0
         );
+    }
+
+    //Top-menu collapse-expand processing
+    const topMenuBurgerButton = document.querySelector('.top__burger-icon');
+    const topMenuItems = document.querySelector('.top__menu-items');
+
+    topMenuBurgerButton.addEventListener('click', topMenuBurgerButtonHandler);
+    
+    function topMenuBurgerButtonHandler (event) {
+        topMenuItems.classList.toggle('top__menu-items_show');
     }
 
     //Site search validation---------------------------------------------------

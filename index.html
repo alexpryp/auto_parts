@@ -15,6 +15,9 @@
         <nav class="nav">
             <div class="nav__content-wrap">
                 <div class="nav__content">
+                    <div class="nav__group">
+                        <a href="#" id="nav__link-burger"><i class="fas fa-bars"></i></a>
+                    </div>
                     <div class="nav__group1">
                         <a href="#" class="nav__link nav__link_active">ГЛАВНАЯ</a>
                         <a href="#" class="nav__link">О КОМПАНИИ</a>
@@ -27,6 +30,15 @@
                         <span class="nav__login-button-caption">ВХОД</span>
                     </button>  
                 </div>
+            </div>
+        </nav>
+        <nav class="mobile-nav">
+            <div class="nav__group2">
+                <a href="#" class="nav__link-mobile nav__link-mobile_active">ГЛАВНАЯ</a>
+                <a href="#" class="nav__link-mobile">О КОМПАНИИ</a>
+                <a href="#" class="nav__link-mobile">ССЫЛКА 1</a>
+                <a href="#" class="nav__link-mobile">ССЫЛКА 2</a>
+                <a href="#" class="nav__link-mobile">ССЫЛКА 3</a>
             </div>
         </nav>
         <div class="header__main">
@@ -85,38 +97,43 @@
             <div class="top__content">
                 <div class="top__menu">
                     <div class="top__menu-header">
-                        <div class="top__burger-icon">
+                        <button class="top__burger-icon">
                             <img src="build/images/icons/burger_icon.png" alt="burger icon">
-                        </div>
+                        </button>
+                        <!-- <div class="top__burger-icon">
+                            <img src="build/images/icons/burger_icon.png" alt="burger icon">
+                        </div> -->
                         <div class="top__menu-title">
                             <div class="top__menu-caption">Меню</div>
                         </div>
                     </div>
-                    <a href="#" class="top__menu-item top__menu-item_first">
-                        ССЫЛКА 1 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
-                    </a>
-                    <a href="#" class="top__menu-item">
-                        ССЫЛКА 2 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
-                    </a>
-                    <a href="#" class="top__menu-item">
-                        ССЫЛКА 3 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
-                    </a>
-                    <a href="#" class="top__menu-item">
-                        ССЫЛКА 4 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
-                    </a>
-                    <a href="#" class="top__menu-item">
-                        ССЫЛКА 5 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
-                    </a>
-                    <a href="#" class="top__menu-item">
-                        ССЫЛКА 6 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
-                    </a>
-                    <a href="#" class="top__menu-item">
-                        ССЫЛКА 7 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
-                    </a>
+                    <div class="top__menu-items">
+                        <a href="#" class="top__menu-item top__menu-item_first">
+                            ССЫЛКА 1 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                        </a>
+                        <a href="#" class="top__menu-item">
+                            ССЫЛКА 2 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                        </a>
+                        <a href="#" class="top__menu-item">
+                            ССЫЛКА 3 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                        </a>
+                        <a href="#" class="top__menu-item">
+                            ССЫЛКА 4 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                        </a>
+                        <a href="#" class="top__menu-item">
+                            ССЫЛКА 5 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                        </a>
+                        <a href="#" class="top__menu-item">
+                            ССЫЛКА 6 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                        </a>
+                        <a href="#" class="top__menu-item">
+                            ССЫЛКА 7 <img src="build/images/icons/rectangle_icon.png" alt="rectangle icon">
+                        </a>
+                    </div>
                 </div>
                 <div class="top__forms">
                     <form action="#" class="top__forms-search" name="top__forms-search">
-                        <input type="search" id="search" name="search" placeholder="Поиск по сайту"><br>
+                        <input type="search" id="search" name="search" placeholder="Поиск по сайту">
                         <div class="top__forms-search-divider"></div>
                         <div class="top__forms-select-wrapper">
                             <select id="categories" name="categories">
