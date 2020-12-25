@@ -3,7 +3,6 @@ window.addEventListener("DOMContentLoaded", function() {
     //Main burger navigation handling------------------------------------------
     const linkBurge = document.getElementById('nav__link-burger');
     const mobileNav = document.querySelector('.mobile-nav');
-    console.log(linkBurge);
 
     linkBurge.addEventListener('click', linkBurgerHandler);
     mobileNav.addEventListener('click', hideMobileNave);
